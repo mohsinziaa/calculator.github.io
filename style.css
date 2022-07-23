@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, #000637 0%, #004e92 100%);
+}
+
+.navbar {
+  background: linear-gradient(to left, #000637 0%, #004e92 100%);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(164, 164, 164);
+}
+
+.navbar h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.row input {
+  background: linear-gradient(to bottom left, #004e92 0%, #000428 100%);
+  color: white;
+  height: 55px;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 254px;
+  padding: 0px 10px;
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.row button {
+  background: linear-gradient(to bottom left, #004e92 0%, #000428 100%);
+  color: white;
+  text-transform: uppercase;
+  width: 66px;
+  height: 55px;
+  margin: 2px 0px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+.row button:hover {
+  background: linear-gradient(
+    to bottom left,
+    #000428 0%,
+    #004e92 50%,
+    #000428 100%
+  );
+  color: white;
+}
+
+.row input:hover {
+  background: linear-gradient(
+    to bottom right,
+    #000428 0%,
+    #004e92 50%,
+    #000428 100%
+  );
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+  .navbar h1 {
+    font-size: 1.8rem;
+  }
+  .row input {
+    width: 210px;
+    font-size: 1rem;
+  }
+
+  .row button {
+    width: 55px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
